@@ -125,3 +125,348 @@ export default run1;
 //         reviews: "Oustanding Product For Customer Satisfaction"
 //     },
 // ]
+
+// const processor = [
+//   {
+//       image: "https://i.ibb.co/10cdwkr/processor4.jpg",
+//       name: "Pc Processor",
+//       category : "Ultimate Processor",
+//       status : "In Stock",
+//       price : "2800",
+//       description : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+//       key_feature :"Rider Brand",
+//       individual_rating :"5 star",
+//       average_rating : "5 start",
+//       reviews: "Oustanding Product For Customer Satisfaction"
+//   },
+
+//   {
+//       image: "https://i.ibb.co/BLDnQtt/processor3.jpg",
+//       name: "ultra processor",
+//       category : "Processor",
+//       status : "In Stock",
+//       price : "4500",
+//       description : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+//       key_feature :"Rider Brand",
+//       individual_rating :"5 star",
+//       average_rating : "5 start",
+//       reviews: "Oustanding Product For Customer Satisfaction"
+//   },
+
+//   {
+//       image: "https://i.ibb.co/1QVZzT8/processor1.png",
+//       name: "Processor",
+//       category : "Processor",
+//       status : "In Stock",
+//       price : "5000",
+//       description : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+//       key_feature :"Rider Brand",
+//       individual_rating :"5 star",
+//       average_rating : "5 start",
+//       reviews: "Oustanding Product For Customer Satisfaction"
+//   },
+
+//   {
+//       image: "https://i.ibb.co/7vW0jc5/processor2.jpg",
+//       name: "power Processor",
+//       category : "Processor",
+//       status : "In Stock",
+//       price : "4000",
+//       description : "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+//       key_feature :"Rider Brand",
+//       individual_rating :"5 star",
+//       average_rating : "5 start",
+//       reviews: "Oustanding Product For Customer Satisfaction"
+//   },
+
+// ]
+
+// const motherboard = [
+//   {
+//     image: "https://i.ibb.co/Y7LVxwS/motherboard4.png",
+//     name: "Msi Mother Board",
+//     category: "Ultimate MotherBoard",
+//     status: "In Stock",
+//     price: "8800",
+//     description:
+//       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+//     key_feature: "Rider Brand",
+//     individual_rating: "5 star",
+//     average_rating: "5 star",
+//     reviews: "Oustanding Product For Customer Satisfaction",
+//   },
+
+//   {
+//     image: "https://i.ibb.co/hLTs7zD/mothrboard2.jpg",
+//     name: "ultra MotherBoard",
+//     category: "MothreBoard",
+//     status: "In Stock",
+//     price: "8900",
+//     description:
+//       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+//     key_feature: "Rider Brand",
+//     individual_rating: "5 star",
+//     average_rating: "5 star",
+//     reviews: "Oustanding Product For Customer Satisfaction",
+//   },
+
+//   {
+//     image: "https://i.ibb.co/gS7hbdk/motherboard1.jpg",
+//     name: "MotherBoard",
+//     category: "MotherBoard",
+//     status: "In Stock",
+//     price: "9000",
+//     description:
+//       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+//     key_feature: "Rider Brand",
+//     individual_rating: "5 star",
+//     average_rating: "5 star",
+//     reviews: "Oustanding Product For Customer Satisfaction",
+//   },
+
+//   {
+//     image: "https://i.ibb.co/mF2BSLj/motherboard3.jpg",
+//     name: "MotherBoard Processor",
+//     category: "MotherBoard",
+//     status: "In Stock",
+//     price: "10000",
+//     description:
+//       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+//     key_feature: "Rider Brand",
+//     individual_rating: "5 star",
+//     average_rating: "5 star",
+//     reviews: "Oustanding Product For Customer Satisfaction",
+//   },
+// ];
+
+const ram = [
+  {
+    image: "https://i.ibb.co/gV4FMrS/ram4.jpg",
+    name: "ultra Ram",
+    category: " Ram",
+    status: "In Stock",
+    price: "4500",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/vdQFWzZ/ram3.jpg",
+    name: "ultra Ram Bar",
+    category: "Ram",
+    status: "In Stock",
+    price: "4600",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/vVgb8bx/ram1.jpg",
+    name: "Modern Ram",
+    category: "Ram",
+    status: "In Stock",
+    price: "4700",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/7Npjfx6/ram2.jpg",
+    name: "MotherBoard Ram",
+    category: "Ram",
+    status: "In Stock",
+    price: "4550",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+];
+
+const powersupply = [
+  {
+    image: "https://i.ibb.co/WPvjcds/power4.jpg",
+    name: "ultra PowerSupply",
+    category: "Powersupply",
+    status: "In Stock",
+    price: "4500",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/K94QNsZ/power3.jpg",
+    name: "ultra Powersupply Bar",
+    category: "Powersupply",
+    status: "In Stock",
+    price: "4600",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/QP87QLx/power2.jpg",
+    name: "Modern PowerSupply",
+    category: "Powersupply",
+    status: "In Stock",
+    price: "4700",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/phFQGqL/power1.jpg",
+    name: "MotherBoard Powersupply",
+    category: "Powersupply",
+    status: "In Stock",
+    price: "4550",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+];
+
+const storagedevice = [
+  {
+    image: "https://i.ibb.co/DfSM88p/sd3.jpg",
+    name: "ultra Storge Device",
+    category: "Storge Device",
+    status: "In Stock",
+    price: "4500",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/YBNw8J2/sd4.jpg",
+    name: "ultra Storage Device Bar",
+    category: "Storage Device",
+    status: "In Stock",
+    price: "4600",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/1f89Zh5/sd2.jpg",
+    name: "Modern Storage Device",
+    category: "Storge Device",
+    status: "In Stock",
+    price: "4700",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/1JDP9xM/sd1.jpg",
+    name: "MotherBoard Storage Device",
+    category: "Storage Device",
+    status: "In Stock",
+    price: "4550",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+];
+
+const monitor = [
+  {
+    image: "https://i.ibb.co/Brbjktq/monitor4.jpg",
+    name: "ultra HP MONITOR",
+    category: "Monitor",
+    status: "In Stock",
+    price: "9000",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/vw7kBXQ/monitor3.jpg",
+    name: "ultra ASUS MONITOR",
+    category: "Monitor",
+    status: "In Stock",
+    price: "10000",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/wr1rWRK/monirtor1.jpg",
+    name: "Modern SAMSUNG MONITOR",
+    category: "Monitor",
+    status: "In Stock",
+    price: "9500",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/g70TVrk/monitor2.jpg",
+    name: "DELL MONITOR",
+    category: "MONITOR",
+    status: "In Stock",
+    price: "10500",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+];

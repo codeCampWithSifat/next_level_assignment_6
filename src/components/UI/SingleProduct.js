@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Link from "next/link";
+
 const SingleProduct = ({ product }) => {
-  console.log(product);
+  // console.log(product);
   return (
     <div className="card  bg-base-100 shadow-xl">
       <div className="card-body items-center text-center">
@@ -11,7 +13,9 @@ const SingleProduct = ({ product }) => {
         <p>Price : {product.price}</p>
         <p>Key Feature : {product.key_feature}</p>
         <p>Status : {product.status}</p>
-        <button className="btn btn-primary">More Info</button>
+        <Link href={`/detailSingleProduct/${product._id}`}>
+          <button className="btn btn-primary">More Info</button>
+        </Link>
       </div>
     </div>
   );

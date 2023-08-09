@@ -15,7 +15,7 @@ const RootLayout = ({ children }) => {
         <Link href="/ram">Ram</Link>
       </li>
       <li>
-        <Link href="/powersupplyunit">Power-Supply</Link>
+        <Link href="/powersupply">Power-Supply</Link>
       </li>
       <li>
         <Link href="/storagedevice">Storaged-Device</Link>
