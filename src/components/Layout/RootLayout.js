@@ -1,8 +1,11 @@
 import Link from "next/link";
+import { useSession, signOut } from "next-auth/react";
 
 const RootLayout = ({ children }) => {
   const date = new Date();
   const year = date.getFullYear();
+  const { data: session } = useSession();
+  console.log(session);
   const menuItem = (
     <>
       <li>
@@ -84,6 +87,17 @@ const RootLayout = ({ children }) => {
             Pc Builder
           </Link>
         </div>
+        {!session?.user ? (
+          <li>
+            <Link className="btn btn-primary mx-2" href="/login">
+              Login
+            </Link>
+          </li>
+        ) : (
+          <button onClick={() => signOut()} className="btn btn-error mx-2">
+            Logout
+          </button>
+        )}
       </div>
 
       {/*  */}
