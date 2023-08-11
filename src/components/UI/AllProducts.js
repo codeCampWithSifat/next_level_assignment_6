@@ -2,7 +2,7 @@ import React from "react";
 import SingleProduct from "./SingleProduct";
 
 const AllProducts = ({ allProducts }) => {
-  console.log(allProducts);
+  // console.log(allProducts);
   return (
     <div>
       <h1 className="text-violet-700 text-center text-3xl font-bold">

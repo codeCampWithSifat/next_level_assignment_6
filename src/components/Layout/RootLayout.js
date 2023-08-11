@@ -30,7 +30,7 @@ const RootLayout = ({ children }) => {
   );
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -80,7 +80,9 @@ const RootLayout = ({ children }) => {
           </ul>
         </div>
         <div className="navbar-center">
-          <a className="btn btn-primary">Button</a>
+          <Link className="btn btn-primary" href="/pcbuilder">
+            Pc Builder
+          </Link>
         </div>
       </div>
 

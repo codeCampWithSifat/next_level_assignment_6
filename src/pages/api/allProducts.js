@@ -470,3 +470,61 @@ const monitor = [
     reviews: "Oustanding Product For Customer Satisfaction",
   },
 ];
+
+const others = [
+  {
+    image: "https://i.ibb.co/553wgjZ/others4.jpg",
+    name: "ultra Mouse",
+    category: "others",
+    status: "In Stock",
+    price: "400",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/pbkZ5L7/others3.jpg",
+    name: "ultra Keyboard",
+    category: "Others",
+    status: "In Stock",
+    price: "600",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/S3jBDHM/others1.jpg",
+    name: "Modern Mouse",
+    category: "Others",
+    status: "In Stock",
+    price: "450",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+
+  {
+    image: "https://i.ibb.co/s57zFXs/others2.jpg",
+    name: "Logitec Keyboard",
+    category: "others",
+    status: "In Stock",
+    price: "650",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, ",
+    key_feature: "Rider Brand",
+    individual_rating: "5 star",
+    average_rating: "5 star",
+    reviews: "Oustanding Product For Customer Satisfaction",
+  },
+];
