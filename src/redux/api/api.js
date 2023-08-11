@@ -16,6 +16,12 @@ export const apiSlice = createApi({
     getPowerSupply: builder.query({
       query: () => "/powersupply",
     }),
+    getStorageDevice: builder.query({
+      query: () => "/storagedevice",
+    }),
+    getMonitor: builder.query({
+      query: () => "/monitor",
+    }),
   }),
 });
 
@@ -24,4 +30,6 @@ export const {
   useGetMotherBoardQuery,
   useGetRamQuery,
   useGetPowerSupplyQuery,
+  useGetStorageDeviceQuery,
+  useGetMonitorQuery,
 } = apiSlice;

@@ -63,7 +63,9 @@ const PcBuilder = () => {
               <th className="text-xl text-violet-700 ">5</th>
               <td className="text-xl text-violet-700 ">Storage Device</td>
               <td>
-                <button className="btn btn-primary">Add Item</button>
+                <Link href="/pcbuilderstorgedevice" className="btn btn-primary">
+                  Add Item
+                </Link>
               </td>
             </tr>
 
@@ -71,7 +73,9 @@ const PcBuilder = () => {
               <th className="text-xl text-violet-700 ">6</th>
               <td className="text-xl text-violet-700 ">Monitor</td>
               <td>
-                <button className="btn btn-primary">Add Item</button>
+                <Link href="/pcbuildermonitor" className="btn btn-primary">
+                  Add Item
+                </Link>
               </td>
             </tr>
           </tbody>
