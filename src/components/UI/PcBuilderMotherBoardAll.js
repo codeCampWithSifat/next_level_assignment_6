@@ -1,8 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
+import { addMotherBoard } from "@/redux/motherBoardSlice";
+import { useRouter } from "next/router";
 import React from "react";
+import { useDispatch } from "react-redux";
 
 const PcBuilderMotherBoardAll = ({ motherboard }) => {
+  const dispatch = useDispatch();
+  const router = useRouter();
+  const addToCart = (product) => {
+    dispatch(addMotherBoard(product));
+    // console.log("product", product);
+    setTimeout(() => {
+      router.push("/pcbuilder");
+    });
+  };
   return (
     <div className="card  bg-base-100 shadow-xl mt-30">
       <div className="card-body items-center text-center">
@@ -12,9 +23,13 @@ const PcBuilderMotherBoardAll = ({ motherboard }) => {
         <p>Price : {motherboard.price}</p>
         <p>Key Feature : {motherboard.key_feature}</p>
         <p>Status : {motherboard.status}</p>
-        <Link href="/pcbuilder">
-          <button className="btn btn-primary">Add</button>
-        </Link>
+
+        <button
+          onClick={() => addToCart(motherboard)}
+          className="btn btn-primary"
+        >
+          Add
+        </button>
       </div>
     </div>
   );

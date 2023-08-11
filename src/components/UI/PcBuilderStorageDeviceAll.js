@@ -1,8 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
+import { addStorageDevice } from "@/redux/storageDeviceSlice";
+import { useRouter } from "next/router";
 import React from "react";
+import { useDispatch } from "react-redux";
 
 const PcBuilderStorageDeviceAll = ({ device }) => {
+  const router = useRouter();
+  const dispatch = useDispatch();
+
+  const addToPc = (product) => {
+    dispatch(addStorageDevice(product));
+    setTimeout(() => {
+      router.push("/pcbuilder");
+    });
+    // console.log(product);
+  };
   return (
     <div className="card  bg-base-100 shadow-xl mt-30">
       <div className="card-body items-center text-center">
@@ -12,9 +24,10 @@ const PcBuilderStorageDeviceAll = ({ device }) => {
         <p>Price : {device.price}</p>
         <p>Key Feature : {device.key_feature}</p>
         <p>Status : {device.status}</p>
-        <Link href="/pcbuilder">
-          <button className="btn btn-primary">Add</button>
-        </Link>
+
+        <button onClick={() => addToPc(device)} className="btn btn-primary">
+          Add
+        </button>
       </div>
     </div>
   );

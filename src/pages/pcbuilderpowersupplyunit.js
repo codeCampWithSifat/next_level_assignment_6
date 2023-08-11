@@ -5,7 +5,6 @@ import React from "react";
 
 const PcBuilerPowerSupplyUnit = () => {
   const { data } = useGetPowerSupplyQuery();
-  console.log(data);
   return (
     <>
       <div>

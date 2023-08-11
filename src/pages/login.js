@@ -10,7 +10,7 @@ const LoginPage = () => {
         <button
           onClick={() =>
             signIn("github", {
-              callbackUrl: "http://localhost:3000/",
+              callbackUrl: "http://localhost:3000/pcbuilder",
             })
           }
           title="Get quote now"

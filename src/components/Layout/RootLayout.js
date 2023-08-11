@@ -5,7 +5,7 @@ const RootLayout = ({ children }) => {
   const date = new Date();
   const year = date.getFullYear();
   const { data: session } = useSession();
-  console.log(session);
+  // console.log(session);
   const menuItem = (
     <>
       <li>
