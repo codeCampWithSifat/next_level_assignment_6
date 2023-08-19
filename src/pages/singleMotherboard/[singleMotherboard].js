@@ -31,7 +31,9 @@ SingleMotherboard.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:3000/api/motherboard`);
+  const res = await fetch(
+    `https://next-level-assignment-6.vercel.app/api/motherboard`
+  );
   const allMotherboard = await res.json();
 
   const paths = allMotherboard.map((motherboard) => ({
@@ -46,7 +48,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const res = await fetch(
-    `http://localhost:3000/api/singleMotherboard/${params.singleMotherboard}`
+    `https://next-level-assignment-6.vercel.app/api/singleMotherboard/${params.singleMotherboard}`
   );
   const data = await res.json();
   return {

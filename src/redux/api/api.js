@@ -2,7 +2,9 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const apiSlice = createApi({
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000/api" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://next-level-assignment-6.vercel.app/api",
+  }),
   endpoints: (builder) => ({
     getProcessor: builder.query({
       query: () => `/processor`,

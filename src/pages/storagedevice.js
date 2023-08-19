@@ -26,7 +26,9 @@ StorageDevice.getLayout = function getLayout(page) {
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch(`http://localhost:3000/api/storagedevice`);
+  const res = await fetch(
+    `https://next-level-assignment-6.vercel.app/api/storagedevice`
+  );
   const data = await res.json();
   // console.log(data);
   return {

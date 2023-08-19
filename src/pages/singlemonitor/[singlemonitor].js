@@ -30,7 +30,9 @@ SingleMonitor.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:3000/api/monitor`);
+  const res = await fetch(
+    `https://next-level-assignment-6.vercel.app/api/monitor`
+  );
   const allMonitor = await res.json();
 
   const paths = allMonitor.map((monitor) => ({
@@ -45,7 +47,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const res = await fetch(
-    `http://localhost:3000/api/singlemonitor/${params.singlemonitor}`
+    `https://next-level-assignment-6.vercel.app/api/singlemonitor/${params.singlemonitor}`
   );
   const data = await res.json();
   return {

@@ -29,8 +29,22 @@ DetailSingleProduct.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
+export const getStaticProps = async ({ params }) => {
+  const res = await fetch(
+    `https://next-level-assignment-6.vercel.app/api/detailSingleProduct/${params.detailSingleProduct}`
+  );
+  const data = await res.json();
+  return {
+    props: {
+      singleProduct: data,
+    },
+  };
+};
+
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:3000/api/allProducts`);
+  const res = await fetch(
+    `https://next-level-assignment-6.vercel.app/api/allProducts`
+  );
   const allProducts = await res.json();
 
   const paths = allProducts.map((product) => ({
@@ -40,17 +54,5 @@ export const getStaticPaths = async () => {
   return {
     paths,
     fallback: false,
-  };
-};
-
-export const getStaticProps = async ({ params }) => {
-  const res = await fetch(
-    `http://localhost:3000/api/detailSingleProduct/${params.detailSingleProduct}`
-  );
-  const data = await res.json();
-  return {
-    props: {
-      singleProduct: data,
-    },
   };
 };

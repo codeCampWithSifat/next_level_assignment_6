@@ -29,7 +29,7 @@ SingleRam.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:3000/api/ram`);
+  const res = await fetch(`https://next-level-assignment-6.vercel.app/api/ram`);
   const allRam = await res.json();
 
   const paths = allRam.map((ram) => ({
@@ -44,7 +44,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const res = await fetch(
-    `http://localhost:3000/api/singleRam/${params.singleRam}`
+    `https://next-level-assignment-6.vercel.app/api/singleRam/${params.singleRam}`
   );
   const data = await res.json();
   return {

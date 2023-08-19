@@ -30,7 +30,9 @@ SinglePowerSupply.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:3000/api/powersupply`);
+  const res = await fetch(
+    `https://next-level-assignment-6.vercel.app/api/powersupply`
+  );
   const allPowerSupply = await res.json();
 
   const paths = allPowerSupply.map((powersupply) => ({
@@ -45,7 +47,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const res = await fetch(
-    `http://localhost:3000/api/singlepowersupply/${params.singlepowersupply}`
+    `https://next-level-assignment-6.vercel.app/api/singlepowersupply/${params.singlepowersupply}`
   );
   const data = await res.json();
   return {

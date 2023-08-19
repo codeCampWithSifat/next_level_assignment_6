@@ -27,7 +27,9 @@ Others.getLayout = function getLayout(page) {
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch(`http://localhost:3000/api/others`);
+  const res = await fetch(
+    `https://next-level-assignment-6.vercel.app/api/others`
+  );
   const data = await res.json();
   // console.log(data);
   return {

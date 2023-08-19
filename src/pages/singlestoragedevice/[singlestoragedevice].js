@@ -30,7 +30,9 @@ SingleStorageDevice.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:3000/api/storagedevice`);
+  const res = await fetch(
+    `https://next-level-assignment-6.vercel.app/api/storagedevice`
+  );
   const allStorageDevice = await res.json();
 
   const paths = allStorageDevice.map((storage) => ({
@@ -45,7 +47,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const res = await fetch(
-    `http://localhost:3000/api/singlestoragedevice/${params.singlestoragedevice}`
+    `https://next-level-assignment-6.vercel.app/api/singlestoragedevice/${params.singlestoragedevice}`
   );
   const data = await res.json();
   return {

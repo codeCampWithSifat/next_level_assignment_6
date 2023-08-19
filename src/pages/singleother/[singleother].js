@@ -29,7 +29,9 @@ SingleOther.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:3000/api/others`);
+  const res = await fetch(
+    `https://next-level-assignment-6.vercel.app/api/others`
+  );
   const allOthers = await res.json();
 
   const paths = allOthers.map((other) => ({
@@ -44,7 +46,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const res = await fetch(
-    `http://localhost:3000/api/singleother/${params.singleother}`
+    `https://next-level-assignment-6.vercel.app/api/singleother/${params.singleother}`
   );
   const data = await res.json();
   return {

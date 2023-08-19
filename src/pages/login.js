@@ -10,7 +10,8 @@ const LoginPage = () => {
         <button
           onClick={() =>
             signIn("github", {
-              callbackUrl: "http://localhost:3000/pcbuilder",
+              callbackUrl:
+                "https://next-level-assignment-6.vercel.app/pcbuilder",
             })
           }
           title="Get quote now"

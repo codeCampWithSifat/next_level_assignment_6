@@ -31,7 +31,9 @@ SingleProcessor.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:3000/api/processor`);
+  const res = await fetch(
+    `https://next-level-assignment-6.vercel.app/api/processor`
+  );
   const allProcessor = await res.json();
 
   const paths = allProcessor.map((processor) => ({
@@ -46,7 +48,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const res = await fetch(
-    `http://localhost:3000/api/singleProcessor/${params.singleProcessor}`
+    `https://next-level-assignment-6.vercel.app/api/singleProcessor/${params.singleProcessor}`
   );
   const data = await res.json();
   // console.log(data);
